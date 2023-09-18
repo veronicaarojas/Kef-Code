@@ -33,11 +33,14 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
           className="font-bold text-center text-lg hover:text-blue-500 dark:hover:text-blue-500"
         >
           {/* <FaRegUserCircle className={"-mt-1 ml-2 inline-block"} /> */}
-          <UserAvatar
+          <UserAvatar 
+          // className="h-7 w-7 -mt-1 ml-2 inline-block"
             user={{ name: "" || null, image: avatar || null }}
-            className="h-7 w-7 -mt-1 ml-2 inline-block"
           />
+          <div>
           {humanize(author)}
+          </div>
+        
         </a>
       </div>
       <div className="flex justify-center items-center text-sm mb-1">

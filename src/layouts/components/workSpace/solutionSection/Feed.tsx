@@ -15,6 +15,16 @@ const Feed: React.FC<FeedProps> = ({ data }) => {
   };
 
   return (
+    // <>
+    //   {(!data) ? <p>אין פתרונות עדיין</p> :
+    //     <div>
+    //       {data?.map((item: any, index: any) => (
+    //         <div key={index} onClick={() => handleClick(index)}>
+    //           <SolutionCard author={item.user.username} date={item.createdAt} likes={item.votes.length} comments={item.comments.length} avatar={item.user.image}/>
+    //         </div>
+    //       ))}</div>
+    //   }
+    // </>
     <>
       {(!data) ? <p>אין פתרונות עדיין</p> :
         <div>
